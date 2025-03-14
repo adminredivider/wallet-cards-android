@@ -20,7 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 # Keep Koin modules
--keepclassmembers class io.walletcards.mobilecards.presentation.main.MainScreenState {
+-keepclassmembers class com.digitalwallet.mobilecards.presentation.main.MainScreenState {
     public <init>();
 }
 

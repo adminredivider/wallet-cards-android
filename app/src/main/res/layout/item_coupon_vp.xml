@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <io.walletcards.mobilecards.presentation.component.TicketView
+    <com.digitalwallet.mobilecards.presentation.component.TicketView
         android:id="@+id/ticket_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -109,5 +109,5 @@
             android:layout_below="@id/cl_center"
             android:layout_alignParentBottom="true"
             android:gravity="bottom" />
-    </io.walletcards.mobilecards.presentation.component.TicketView>
+    </com.digitalwallet.mobilecards.presentation.component.TicketView>
 </androidx.constraintlayout.widget.ConstraintLayout>

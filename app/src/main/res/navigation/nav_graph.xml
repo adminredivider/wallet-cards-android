@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="io.walletcards.mobilecards.presentation.main.fragment.MainFragment"
+        android:name="com.digitalwallet.mobilecards.presentation.main.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
 
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/addCardFragment"
-        android:name="io.walletcards.mobilecards.presentation.add_card.AddCardFragment"
+        android:name="com.digitalwallet.mobilecards.presentation.add_card.AddCardFragment"
         android:label="add_card_fragment"
         tools:layout="@layout/fragment_add_credit_card">
         <action
@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/detailCardFragment"
-        android:name="io.walletcards.mobilecards.presentation.detail_card.DetailCardFragment"
+        android:name="com.digitalwallet.mobilecards.presentation.detail_card.DetailCardFragment"
         android:label="detail_card_fragment"
         tools:layout="@layout/fragment_credit_detail">
         <action
@@ -49,7 +49,7 @@
 
     <fragment
         android:id="@+id/detailPassbookFragment"
-        android:name="io.walletcards.mobilecards.presentation.detail_passbook.DetailPassbookFragment"
+        android:name="com.digitalwallet.mobilecards.presentation.detail_passbook.DetailPassbookFragment"
         android:label="detail_passbook_fragment"
         tools:layout="@layout/fragment_passbook_detail">
         <argument
@@ -65,7 +65,7 @@
 
     <fragment
         android:id="@+id/passBackFragment"
-        android:name="io.walletcards.mobilecards.presentation.detail_passbook.back_view.BackPassbookViewFragment"
+        android:name="com.digitalwallet.mobilecards.presentation.detail_passbook.back_view.BackPassbookViewFragment"
         android:label="back_passbook_fragment"
         tools:layout="@layout/fragment_back_pass">
         <argument
@@ -79,7 +79,7 @@
     </fragment>
     <fragment
         android:id="@+id/cardDesignFragment"
-        android:name="io.walletcards.mobilecards.presentation.card_design.CardDesignFragment"
+        android:name="com.digitalwallet.mobilecards.presentation.card_design.CardDesignFragment"
         android:label="CardDesignFragment"
         tools:layout="@layout/fragment_card_design">
         <action
@@ -91,7 +91,7 @@
 
     <fragment
         android:id="@+id/paywell"
-        android:name="io.walletcards.mobilecards.presentation.paywell.Paywell"
+        android:name="com.digitalwallet.mobilecards.presentation.paywell.Paywell"
         android:label="fragment_paywell"
         tools:layout="@layout/fragment_paywell" />
 
