@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TicketView">
+        <attr format="reference" name="tv_anchor1"/>
+        <attr format="reference" name="tv_anchor2"/>
+
+        <attr format="color" name="tv_dashColor"/>
+        <attr format="dimension" name="tv_dashSize"/>
+        <attr format="dimension" name="tv_circleSpace"/>
+        <attr format="dimension" name="tv_circleRadius"/>
+        <attr format="boolean" name="tv_showHoles"/>
+        <attr name="tv_topHoleWidth" format="dimension" />
+        <attr name="tv_topHoleHeight" format="dimension" />
+        <attr name="tv_showTopHole" format="boolean" />
+    </declare-styleable>
+</resources>

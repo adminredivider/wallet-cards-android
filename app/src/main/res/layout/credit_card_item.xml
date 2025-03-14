@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="186dp"
+    app:cardCornerRadius="16dp"
+    app:strokeColor="@android:color/transparent"
+    app:strokeWidth="0dp"
+    android:padding="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/backgroundimage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card_33" />
+
+        <TextView
+            android:id="@+id/tv_card_holder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/cera_pro_light"
+            android:maxLines="1"
+            android:text="Wallet App"
+            android:textAlignment="textStart"
+            android:textColor="@color/white_fc"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_logo"
+            app:layout_constraintEnd_toStartOf="@id/card_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/card_logo"
+            android:layout_width="63dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:elevation="10dp"
+            android:src="@drawable/paymethod_visa"
+            android:contentDescription="cardlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="***** **** **** 2345"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

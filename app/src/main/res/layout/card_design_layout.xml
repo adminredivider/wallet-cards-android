@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/design_card"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_card_design"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/card_design"
+            android:scaleType="fitXY"
+            android:src="@drawable/card_39" />
+
+        <Button
+            android:id="@+id/iv_lock"
+            style="@style/popUpDialogTextStyle"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/brush"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:minHeight="30dp"
+            android:visibility="gone"
+            app:icon="@drawable/icons_locket"
+            app:iconGravity="textEnd"
+            app:iconSize="13dp"
+            app:iconTint="#E0E0E0" />
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

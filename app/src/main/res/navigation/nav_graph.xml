@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="io.walletcards.android.presentation.main.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_cardDetailFragment"
+            app:destination="@id/detailCardFragment" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_passbookDetailFragment"
+            app:destination="@id/detailPassbookFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="io.walletcards.android.presentation.add_card.AddCardFragment"
+        android:label="add_card_fragment"
+        tools:layout="@layout/fragment_add_credit_card">
+        <action
+            android:id="@+id/action_addCardFragment_to_cardDesignFragment"
+            app:destination="@id/cardDesignFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailCardFragment"
+        android:name="io.walletcards.android.presentation.detail_card.DetailCardFragment"
+        android:label="detail_card_fragment"
+        tools:layout="@layout/fragment_credit_detail">
+        <action
+            android:id="@+id/action_detailCardFragment_to_cardDesignFragment"
+            app:destination="@id/cardDesignFragment" />
+        <argument
+            android:name="cardId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailPassbookFragment"
+        android:name="io.walletcards.android.presentation.detail_passbook.DetailPassbookFragment"
+        android:label="detail_passbook_fragment"
+        tools:layout="@layout/fragment_passbook_detail">
+        <argument
+            android:name="uniqueId"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_detailPassbook_to_passbookBackFragment"
+            app:destination="@id/passBackFragment">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/passBackFragment"
+        android:name="io.walletcards.android.presentation.detail_passbook.back_view.BackPassbookViewFragment"
+        android:label="back_passbook_fragment"
+        tools:layout="@layout/fragment_back_pass">
+        <argument
+            android:name="uniqueId"
+            app:argType="string" />
+
+        <argument
+            android:name="currentPos"
+            app:argType="integer" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/cardDesignFragment"
+        android:name="io.walletcards.android.presentation.card_design.CardDesignFragment"
+        android:label="CardDesignFragment"
+        tools:layout="@layout/fragment_card_design">
+        <action
+            android:id="@+id/action_cardDesignFragment_to_paywell"
+            app:destination="@id/paywell" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/paywell"
+        android:name="io.walletcards.android.presentation.paywell.Paywell"
+        android:label="fragment_paywell"
+        tools:layout="@layout/fragment_paywell" />
+
+
+</navigation>

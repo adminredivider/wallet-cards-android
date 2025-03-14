@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="221dp"
+            android:fontFamily="@font/cera_pro_regular"
+            android:letterSpacing=".01"
+            android:text="@string/card_details"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/edit_card"
+            style="@style/popUpDialogTextStyle"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:text="@string/edit"
+            android:visibility="gone"
+            app:icon="@drawable/edit_icon"
+            app:iconSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        style="@style/Add_card_llStyle"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/cerave_regular_style"
+                    android:gravity="bottom|start"
+                    android:text="@string/card_name_" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_card_name"
+                    style="@style/textFieldStyle"
+                    android:enabled="false"
+                    android:hint="@string/enter_card_name"
+                    android:inputType="text" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/card_name_copy_to_clipboard"
+            style="@style/copy_to_clipboard_style"
+            android:visibility="gone"
+            app:icon="@drawable/copy_to_text"
+            app:iconTint="@color/color_303030" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Add_card_llStyle"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/cerave_regular_style"
+                    android:gravity="bottom|start"
+                    android:text="@string/full_name" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_cardholder_name"
+                    style="@style/textFieldStyle"
+                    android:enabled="false"
+                    android:hint="@string/enter_cardholder_name"
+                    android:inputType="text" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/edit_cardholder_name_copy_to_clipboard"
+            style="@style/copy_to_clipboard_style"
+            android:visibility="gone"
+            app:icon="@drawable/copy_to_text"
+            app:iconTint="@color/color_303030" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Add_card_llStyle"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/cerave_regular_style"
+                    android:gravity="bottom|start"
+                    android:text="@string/card_number" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_card_number"
+                    style="@style/textFieldStyle"
+                    android:enabled="false"
+                    android:hint="@string/enter_card_number"
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/card_number_copy_to_clipboard"
+            style="@style/copy_to_clipboard_style"
+            android:visibility="gone"
+            app:icon="@drawable/copy_to_text"
+            app:iconTint="@color/color_303030" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/tv_valid_cvv_layout"
+        layout="@layout/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/notes_layout"
+        style="@style/Add_card_llStyle"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/cerave_regular_style"
+            android:gravity="bottom|start"
+            android:text="@string/note" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_some_notes"
+            style="@style/textFieldStyle"
+            android:hint="@string/enter_some_notes"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/update_card_data"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cera_pro_medium"
+        android:letterSpacing=".01"
+        android:text="@string/update"
+        android:textColor="@color/color_1e1e1e"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:backgroundTint="?android:colorPrimary"
+        app:cornerRadius="100dp"
+        app:rippleColor="@color/grey_4c4c4c"
+        app:strokeColor="@color/add_card_btn_color"
+        app:strokeWidth="1dp" />
+
+</LinearLayout>

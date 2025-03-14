@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_26">#42000000</color>
+    <color name="black_with_alpha">#99000000</color>
+    <color name="black_with_alpha_50">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#ffFEFDFA</color>
+    <color name="screen_new_background">#FAFAFA</color>
+
+    <color name="gray">#ff606060</color>
+    <color name="gray_200">#FFEEEEEE</color>
+    <color name="gray_300">#EDECE9</color>
+    <color name="gray_500">#FF9E9E9E</color>
+    <color name="dark_gray">#ff1C1C1E</color>
+    <color name="text_main_color">#ffEDECE9</color>
+    <color name="add_card_view_border">#ff1A1A1A</color>
+    <color name="add_card_view_color">#ffEDECE9</color>
+    <color name="app_bg_font_color">#ffFFFEFC</color>
+    <color name="ad_bg_font_color">#ffF1F4F9</color>
+    <color name="add_button_color">#fff5f5f5</color>
+    <color name="wallet_blue">#3478F6</color>
+    <color name="red">#ffFF0000</color>
+    <color name="gray_767680">#767680</color>
+    <color name="gradiant_start_color">#52B6Fe</color>
+    <color name="gradiant_end_color">#6154FE</color>
+    <color name="text_black_1b1b">#1B1B1F</color>
+    <color name="grey_4c4c4c">#4c4c4c</color>
+    <color name="stroke_grey_color">#E0E0E0</color>
+    <color name="add_card_btn_color">#4F4F4F</color>
+    <color name="white_fc"> #FCFCFC</color>
+    <color name="black_282828">#282828</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_1e1e1e">#1E1E1E</color>
+
+
+
+</resources>

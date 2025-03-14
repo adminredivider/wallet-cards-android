@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alertdialog_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/are_you_sure_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="22sp"
+        android:textColor="@color/black_282828"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cera_pro_regular"
+        android:text="@string/the_card_pass_will_nbe_permanently_deleted"
+        android:textColor="@color/black_282828"
+        android:textSize="16sp"
+        android:gravity="center|start"
+        android:maxLines="2"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/are_you_sure_txt" />
+
+    <Button
+        android:id="@+id/delete_yes"
+        style="@style/confirmation_dialog_actionBtn_style"
+        android:text="@string/yes"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_no"
+        app:layout_constraintEnd_toStartOf="@+id/delete_no"
+        app:layout_constraintTop_toTopOf="@+id/delete_no" />
+
+    <Button
+        android:id="@+id/delete_no"
+        style="@style/confirmation_dialog_actionBtn_style"
+        android:text="@string/no"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

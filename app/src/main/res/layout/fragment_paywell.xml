@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_new_background"
+    android:padding="20dp"
+    tools:context=".presentation.paywell.Paywell">
+
+    <Button
+        android:id="@+id/ic_close"
+        style="@style/popUpDialogTextStyle"
+        android:layout_gravity="center|end"
+        android:contentDescription="@string/ic_close"
+        android:minHeight="40dp"
+        app:icon="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/ic_close">
+
+        <ImageView
+            android:id="@+id/wallet_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/wallet_icon"
+            android:src="@drawable/icons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/premium_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="@string/become_a_premium"
+            android:textColor="@color/text_black_1b1b"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="@+id/wallet_icon"
+            app:layout_constraintStart_toStartOf="@+id/wallet_icon"
+            app:layout_constraintTop_toBottomOf="@+id/wallet_icon" />
+
+        <TextView
+            android:id="@+id/unlock_the_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:fontFamily="@font/inter_medium"
+            android:letterSpacing=".01"
+            android:text="@string/unlock_the_full_experience"
+            android:textColor="@color/gray_767680"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/premium_text"
+            app:layout_constraintStart_toStartOf="@+id/premium_text"
+            app:layout_constraintTop_toBottomOf="@+id/premium_text" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center|start"
+                android:letterSpacing=".013"
+                android:text="@string/unlimited_cards"
+                android:textColor="@color/text_black_1b1b"
+                android:textSize="13sp"
+                app:drawableStartCompat="@drawable/paywall_icons" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center|start"
+                android:letterSpacing=".013"
+                android:text="Unlock All Design"
+                android:textColor="@color/text_black_1b1b"
+                android:textSize="13sp"
+                app:drawableStartCompat="@drawable/icons__2_" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+                android:minHeight="40dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center|start"
+                android:letterSpacing=".013"
+                android:text="Fingerprint Protection"
+                android:textColor="@color/text_black_1b1b"
+                android:textSize="13sp"
+                app:drawableStartCompat="@drawable/icons__1_" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center|start"
+                android:letterSpacing=".013"
+                android:text="Remove Ads"
+                android:textColor="@color/text_black_1b1b"
+                android:textSize="13sp"
+                android:minHeight="40dp"
+                app:drawableStartCompat="@drawable/paywall_icons__1_" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_layout" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:letterSpacing=".025"
+            android:text="@string/rub_1_799_year_after_free_7_days_trial"
+            android:textColor="@color/gray_767680"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/makePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradiant_btn_background"
+            android:letterSpacing=".01"
+            android:text="@string/continue_text"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:autoLink="none"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center"
+            android:text="@string/by_continuing_you_agree_to_our_terms_and_privacy_policies_subscription_will_auto_renew_cancel_anytime"
+            android:letterSpacing=".04"
+            android:maxLines="2"
+            android:textColor="@color/gray_767680"
+            android:textSize="11sp"
+            tools:text="By continuing you agree to our Terms and Privacy policies. Subscription will auto-renew. Cancel anytime." />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
