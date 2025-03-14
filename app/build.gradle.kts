@@ -16,11 +16,11 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "io.walletcards.android"
+    namespace = "com.digitalwallet.mobilecards"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.walletcards.android"
+        applicationId = "com.digitalwallet.mobilecards"
         minSdk = 21
         targetSdk = 35
         versionCode = 125
@@ -125,8 +125,6 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.glide)
     //implementation("com.example.my_flutter_module:flutter_debug:1.0")
-    debugImplementation("com.example.my_flutter_module:flutter_debug:1.0")
-    releaseImplementation("com.example.my_flutter_module:flutter_release:1.0")
     // profileImplementation 'com.example.my_flutter_module:flutter_profile:1.0'
    // add("profileImplementation", "com.example.flutter_module:flutter_profile:1.0")
 }

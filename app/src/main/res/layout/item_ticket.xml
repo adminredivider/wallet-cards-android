@@ -16,7 +16,7 @@
         app:strokeWidth="0.5dp"
         app:layout_constraintDimensionRatio="1:1.3">
 
-        <io.walletcards.android.presentation.component.TicketView
+        <io.walletcards.mobilecards.presentation.component.TicketView
             android:id="@+id/ticket_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -135,6 +135,6 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:gravity="bottom" />
-        </io.walletcards.android.presentation.component.TicketView>
+        </io.walletcards.mobilecards.presentation.component.TicketView>
     </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
